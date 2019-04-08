@@ -87,7 +87,6 @@ OS 和用户空间的程序共享了 mmap 技术，也就是共享了操控堆(h
 
 * 注1：只能是 32bit to 32bit / 64bit to 64bit 程序之间可以相互装载执行。
 * 注2：32bit/64bit 程序之间不能相互装载，这是因为 ELF 32bit/64bit 的结构宽度不一样，用同一套代码不能同时解析 32bit/64bit 程序。
-* 注3：只有 64bit kernel 才能同时运行 32bit/64bit 程序。
 
 # License
 本项目的核心代码移植自 Linux v4.15 - linux/fs/binfmt_elf.c。所以本项目及其衍生项目的License，自然要跟随 Linux，采用 GPL 2.0。
